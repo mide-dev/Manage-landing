@@ -1,3 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-beVietnam;
+  }
+
+  h1 {
+    @apply font-bold text-customBlue text-[2.5rem] leading-[3.125rem] md:text-[3.5rem] md:leading-[4rem];
+  }
+
+  h2 {
+    @apply font-bold text-customBlue text-[1.875rem] leading-[2.813rem] md:text-[2.5rem] md:leading-[2.75rem];
+  }
+
+  h3 {
+    @apply font-bold text-customBlue text-[1rem] leading-[1.438rem];
+  }
+
+  p {
+    @apply font-light text-[1rem] leading-[1.75rem] text-customBlue opacity-70;
+  }
+}
+
+@layer components {
+  /* components */
+  .container {
+    width: min(100% - 3rem, 1100px);
+    margin-inline: auto;
+  }
+
+  .section {
+    @apply pb-14 md:pb-32;
+  }
+
+  .even-columns {
+    @apply grid grid-flow-col auto-cols-fr;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 rounded-full bg-customOrange font-bold text-customWhite hover:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 rounded-full bg-white font-bold text-customOrange hover:opacity-60;
+  }
+}
