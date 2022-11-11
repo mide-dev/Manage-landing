@@ -27,7 +27,6 @@
 }
 
 @layer components {
-  /* components */
   .container {
     width: min(100% - 3rem, 1100px);
     margin-inline: auto;
@@ -37,8 +36,17 @@
     @apply pb-14 md:pb-32;
   }
 
-  .even-columns {
+  /* .even-columns {
     @apply grid grid-flow-col auto-cols-fr;
+  } */
+
+  @media (min-width: 768px) {
+    .even-columns {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+      gap: clamp(2rem, 5vw, 6rem);
+    }
   }
 
   .btn-primary {
