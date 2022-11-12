@@ -8,19 +8,24 @@
     <title>Manage Landing</title>
   </head>
   <body>
-    <header class="section">
+    <header class="section | pt-11 md:pt-14">
       <div class="container">
-        <img src="images/logo.svg" />
-        <nav>
-          <ul class="list-none">
-            <li><a>Pricing</a></li>
-            <li><a>Product</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Careers</a></li>
-            <li><a>Community</a></li>
-          </ul>
-        </nav>
-        <button class="btn-primary">Get Started</button>
+        <div class="flex items-center justify-between relative">
+          <img src="images/logo.svg" />
+          <button class="block lg:hidden">
+            <img src="images/icon-hamburger.svg" />
+          </button>
+          <nav class="absolute top-20 right-0 lg:static">
+            <ul class="flex flex-col lg:flex-row lg:gap-x-8 list-none">
+              <li><a>Pricing</a></li>
+              <li><a>Product</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Careers</a></li>
+              <li><a>Community</a></li>
+            </ul>
+          </nav>
+          <button class="btn-primary | hidden lg:block">Get Started</button>
+        </div>
       </div>
     </header>
 
@@ -151,5 +156,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
