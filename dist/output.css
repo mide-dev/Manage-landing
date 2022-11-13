@@ -663,20 +663,16 @@ p{
   position: relative;
 }
 
-.top-0{
-  top: 0px;
+.top-20{
+  top: 5rem;
 }
 
 .right-0{
   right: 0px;
 }
 
-.top-10{
-  top: 2.5rem;
-}
-
-.top-20{
-  top: 5rem;
+.z-10{
+  z-index: 10;
 }
 
 .block{
@@ -699,12 +695,20 @@ p{
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
 
 .justify-between{
   justify-content: space-between;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .bg-customOrange{

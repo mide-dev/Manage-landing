@@ -10,12 +10,23 @@
   <body>
     <header class="section | pt-11 md:pt-14">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="flex items-start justify-between relative">
           <img src="images/logo.svg" />
-          <button class="block lg:hidden">
-            <img src="images/icon-hamburger.svg" />
+          <button class="mobile-nav | block lg:hidden">
+            <img
+              class="icon-hamburger"
+              alt=""
+              src="images/icon-hamburger.svg"
+            />
+            <img
+              class="icon-close | hidden"
+              alt=""
+              src="images/icon-close.svg"
+            />
           </button>
-          <nav class="absolute top-20 right-0 lg:static">
+          <nav
+            class="nav-wrapper | hidden lg:block absolute top-20 right-0 lg:static z-10"
+          >
             <ul class="flex flex-col lg:flex-row lg:gap-x-8 list-none">
               <li><a>Pricing</a></li>
               <li><a>Product</a></li>
