@@ -8,9 +8,9 @@
     <title>Manage Landing</title>
   </head>
   <body>
-    <header class="section | pt-11 md:pt-14">
+    <header class="section | pt-11">
       <div class="container">
-        <div class="flex items-start justify-between relative">
+        <div class="flex items-start lg:items-center justify-between relative">
           <img src="images/logo.svg" />
           <button class="mobile-nav | block lg:hidden">
             <img
@@ -25,14 +25,16 @@
             />
           </button>
           <nav
-            class="nav-wrapper | hidden lg:block absolute top-20 right-0 lg:static z-10"
+            class="nav-wrapper | hidden absolute top-14 w-full lg:w-auto lg:block lg:static"
           >
-            <ul class="flex flex-col lg:flex-row lg:gap-x-8 list-none">
-              <li><a>Pricing</a></li>
-              <li><a>Product</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Careers</a></li>
-              <li><a>Community</a></li>
+            <ul
+              class="nav-menu | flex flex-col items-center p-10 lg:flex-row lg:gap-x-8 list-none"
+            >
+              <li class="z-10 mb-6"><a href="#">Pricing</a></li>
+              <li class="z-10 mb-6"><a href="#">Product</a></li>
+              <li class="z-10 mb-6"><a href="#">About Us</a></li>
+              <li class="z-10 mb-6"><a href="#">Careers</a></li>
+              <li class="z-10"><a href="#">Community</a></li>
             </ul>
           </nav>
           <button class="btn-primary | hidden lg:block">Get Started</button>
