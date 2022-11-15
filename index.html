@@ -8,11 +8,11 @@
     <title>Manage Landing</title>
   </head>
   <body>
-    <header class="section | pt-11">
+    <header class="main-header section | pt-11">
       <div class="container">
         <div class="flex items-start lg:items-center justify-between relative">
           <img src="images/logo.svg" />
-          <button class="mobile-nav | block lg:hidden">
+          <button class="mobile-nav | block relative z-10 lg:hidden">
             <img
               class="icon-hamburger"
               alt=""
@@ -24,16 +24,19 @@
               src="images/icon-close.svg"
             />
           </button>
+
           <nav
             class="nav-wrapper | hidden absolute top-14 w-full lg:w-auto lg:block lg:static"
           >
+            <!-- prettier-ignore -->
             <ul
-              class="nav-menu | flex flex-col items-center p-10 lg:flex-row lg:gap-x-8 list-none"
+              class="nav-menu | flex flex-col items-center p-10 lg:flex-row lg:gap-x-8 list-none text-customBlue
+              before:content-[''] before:block before:absolute before:z-10 before:inset-0 before:bg-white before:rounded-md lg:before:hidden"
             >
-              <li class="z-10 mb-6"><a href="#">Pricing</a></li>
-              <li class="z-10 mb-6"><a href="#">Product</a></li>
-              <li class="z-10 mb-6"><a href="#">About Us</a></li>
-              <li class="z-10 mb-6"><a href="#">Careers</a></li>
+              <li class="z-10 mb-6 lg:mb-0"><a href="#">Pricing</a></li>
+              <li class="z-10 mb-6 lg:mb-0"><a href="#">Product</a></li>
+              <li class="z-10 mb-6 lg:mb-0"><a href="#">About Us</a></li>
+              <li class="z-10 mb-6 lg:mb-0"><a href="#">Careers</a></li>
               <li class="z-10"><a href="#">Community</a></li>
             </ul>
           </nav>
