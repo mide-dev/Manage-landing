@@ -453,6 +453,8 @@ h1{
 }
 
 h2{
+  max-width: 500px;
+  text-align: center;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.813rem;
@@ -461,20 +463,28 @@ h2{
 
 @media (min-width: 768px){
   h2{
+    text-align: left;
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 h3{
+  text-align: center;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.438rem;
   color: hsla(228, 38%, 23%, 1);
 }
 
+@media (min-width: 768px){
+  h3{
+    text-align: left;
+  }
+}
+
 p{
-  max-width: 500px;
+  max-width: 450px;
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
@@ -645,6 +655,28 @@ p{
   }
 }
 
+.flex-columns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px){
+  .flex-columns{
+    align-items: flex-start;
+  }
+}
+
+.bottom-spacer{
+  margin-bottom: 0.813rem;
+}
+
+@media (min-width: 768px){
+  .bottom-spacer{
+    margin-bottom: 1.5rem;
+  }
+}
+
 .btn-primary{
   border-radius: 9999px;
   background-color: hsla(12, 88%, 59%, 1);
@@ -768,6 +800,14 @@ p{
   padding-top: 2.75rem;
 }
 
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.text-left{
+  text-align: left;
+}
+
 .text-customBlue{
   color: hsla(228, 38%, 23%, 1);
 }
@@ -817,10 +857,6 @@ p{
 }
 
 @media (min-width: 768px){
-  .md\:items-start{
-    align-items: flex-start;
-  }
-
   .md\:py-14{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
